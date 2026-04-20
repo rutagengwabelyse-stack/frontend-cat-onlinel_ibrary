@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Description</title>
+    <style>
+        /* 1. RESET & BACKGROUND SETUP */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #051024; /* Consistent dark navy */
+            font-family: "Times New Roman", Times, serif;
+            color: #ffffff;
+            overflow-x: hidden; /* Prevents horizontal scroll */
+        }
+
+        /* 2. TEXT CONTAINER */
+        .description-container {
+            max-width: 900px; /* Limits width for better readability */
+            padding: 40px;
+            text-align: center;
+            line-height: 1.6; /* Adds breathing room between lines */
+        }
+
+        /* 3. PARAGRAPH STYLING */
+        .description-text {
+            font-size: 24px;
+            font-weight: normal;
+            letter-spacing: 0.3px;
+            word-spacing: 1px;
+        }
+
+        /* Responsive adjustment for smaller screens */
+        @media (max-width: 600px) {
+            .description-text {
+                font-size: 18px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="description-container">
+        <p class="description-text">
+            The Alchemist is a 1988 allegorical novel by Brazilian author Paulo Coelho. <br>
+            It follows Santiago, a young Andalusian shepherd, on a journey to the Egyptian pyramids in search of a hidden treasure that ultimately leads him to self-discovery and spiritual awakening. <br>
+            The book’s universal themes of destiny and personal legend have made it a global literary phenomenon.
+        </p>
+    </div>
+
+</body>
+</html>

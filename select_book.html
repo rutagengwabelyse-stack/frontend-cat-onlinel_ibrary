@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Book</title>
+    <style>
+        /* 1. RESET & LAYOUT */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #051024; /* Matching dark navy */
+            font-family: "Times New Roman", Times, serif;
+            color: white;
+            overflow: hidden;
+        }
+
+        /* 2. CONTENT WRAPPER */
+        .content-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        /* 3. QUOTE STYLING */
+        .welcome-quote {
+            font-size: 24px;
+            line-height: 1.5;
+            margin-bottom: 60px; /* Space between quote and button */
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        /* 4. LARGE PILL BUTTON */
+        .select-book-btn {
+            background-color: #ffffff;
+            color: #000000;
+            
+            /* Text styling: Uppercase with spacing */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 22px;
+            font-family: inherit;
+            
+            /* Sizing and shape */
+            padding: 20px 80px;
+            border-radius: 100px; /* Large radius for the pill look */
+            border: none;
+            cursor: pointer;
+            
+            /* Interactions */
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .select-book-btn:hover {
+            background-color: #f2f2f2;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .select-book-btn:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-container">
+        <p class="welcome-quote">
+            “Welcome! Open a book, open your mind.<br>
+            Explore, learn, and grow with us.”
+        </p>
+
+        <a href="books.html"><button class="select-book-btn">Select Book</button>
+        </a>
+    </div>
+
+</body>
+</html>

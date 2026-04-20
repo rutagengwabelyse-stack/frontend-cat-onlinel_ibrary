@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        /* 1. RESET & BACKGROUND */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end; /* Keeps card on the right */
+            align-items: center;
+            padding-right: 10%;
+            
+            /* Background image setup */
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
+                        url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        /* 2. THE GLASS CARD */
+        .glass-card {
+            background: rgba(15, 23, 42, 0.7); 
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            width: 380px;
+            padding: 50px 40px;
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: white;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 35px;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+
+        /* 3. FORM ELEMENTS */
+        .input-field {
+            width: 100%;
+            padding: 12px 20px;
+            margin-bottom: 20px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .input-field::placeholder {
+            color: #555;
+            font-style: italic;
+        }
+
+        /* 4. FOOTER ACTIONS */
+        .footer-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .btn-submit {
+            background-color: #003380; /* Same dark blue */
+            color: white;
+            padding: 10px 35px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #0046b3;
+        }
+
+        .login-redirect {
+            font-size: 11px;
+            color: white;
+            text-align: right;
+            line-height: 1.5;
+        }
+
+        .login-redirect span {
+            color: #ff3333; /* Red highlight for "Log in" */
+            cursor: pointer;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <h1>sign up</h1>
+        
+        <form>
+            <input type="email" class="input-field" placeholder="Enter your email" required>
+            <input type="password" class="input-field" placeholder="Enter your password" required>
+
+            <div class="footer-row">
+            <button type="submit" class="btn-submit">sign up</button></a>
+                <a href="login.html"><p class="login-redirect">
+                    you already have account?<br>
+                    <a href="login.html"><span>Log in</span><a/>
+                </p>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
